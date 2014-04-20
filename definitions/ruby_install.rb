@@ -2,7 +2,7 @@ define :ruby_install do
   ruby_version = params[:version] || params[:name]
   options = params[:options] || {}
 
-  include_recipe "sprout-osx-rbenv"
+  include_recipe "sprout-rbenv"
 
   rbenv_cmd = node['sprout']['rbenv']['command']
   install_cmd = "#{rbenv_cmd} install #{ruby_version} #{options[:command_line_options]}"

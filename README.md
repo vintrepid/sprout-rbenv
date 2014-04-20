@@ -1,3 +1,3 @@
-sprout-osx-ruby
+sprout-rbenv
 ===============
-Recipes to install ruby related tools on OS X Mountain Lion.
+Recipes to install rbenv on OS X Mountain Lion.
