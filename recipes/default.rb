@@ -14,6 +14,6 @@ end
 
 execute "making #{default_ruby} with rbenv the default" do
   command "rbenv global #{default_ruby}"
-  user node['current_user']
+  user node['sprout']['user']
   not_if { default_ruby.nil? }
 end

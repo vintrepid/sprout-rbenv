@@ -9,7 +9,7 @@ define :ruby_install do
 
   execute "installing #{ruby_version} with RBENV: #{install_cmd}" do
     command install_cmd
-    user params[:user] || node['current_user']
+    user params[:user] || node['sprout']['user']
     only_if params[:only_if] if params[:only_if]
     not_if params[:not_if] || "#{rbenv_cmd} versions | grep #{ruby_version}"
     env options[:env]
@@ -17,6 +17,6 @@ define :ruby_install do
 
   execute "check #{ruby_version}" do
     command "#{rbenv_cmd} versions | grep #{ruby_version}"
-    user params[:user] || node['current_user']
+    user params[:user] || node['sprout']['user']
   end
 end
