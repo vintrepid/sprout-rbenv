@@ -1,6 +1,6 @@
 name             'sprout-rbenv'
 maintainer       'Pivotal Labs'
-maintainer_email 'sprout-maintainers@pivotallabs.com'
+maintainer_email 'sprout-maintainers@googlegroups.com'
 license          'MIT'
 description      'Installs/Configures rbenv'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
