@@ -3,6 +3,7 @@ default_ruby = node['sprout']['rbenv']['default_ruby']
 
 package 'rbenv'
 package 'ruby-build'
+package 'rbenv-gemset'
 
 sprout_base_bash_it_enable_feature 'plugins/rbenv'
 
